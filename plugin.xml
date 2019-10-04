@@ -82,7 +82,7 @@
         <config-file parent="/manifest/application" target="app/src/main/AndroidManifest.xml">
           <meta-data
             android:name="com.transistorsoft.locationmanager.license_key"
-            android:value="YOUR_LICENSE_KEY_HERE" />
+            android:value="e8ea4c8ce8a614d9ce04efdad3eb9ac80da93f78fc0bfdf4ec4f924a5ede09a4" />
         </config-file>
       <!-- /background-geolocation -->
         
