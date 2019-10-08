@@ -40,10 +40,6 @@ export default class BackgroundGeolocation {
   static get PERSIST_MODE_GEOFENCE()  { return plugin().PERSIST_MODE_GEOFENCE; }
   static get PERSIST_MODE_NONE()      { return plugin().PERSIST_MODE_NONE; }
 
-  static get logger() { return plugin().logger; }
-
-  static get deviceSettings() { return plugin().deviceSettings; }
-
   static ready(config:any, success?:Function, failure?:Function) {
     let bgGeo = plugin();
     return bgGeo.ready.apply(bgGeo, arguments);
@@ -279,4 +275,9 @@ export default class BackgroundGeolocation {
     let bgGeo = plugin();
     return bgGeo.requestPermission.apply(bgGeo, arguments);
   }
+	
+  static get logger() { return plugin().logger; }
+
+  static get deviceSettings() { return plugin().deviceSettings; }
+
 }
