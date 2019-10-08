@@ -154,16 +154,6 @@ var BackgroundGeolocation = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(BackgroundGeolocation, "logger", {
-        get: function () { return plugin().logger; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(BackgroundGeolocation, "deviceSettings", {
-        get: function () { return plugin().deviceSettings; },
-        enumerable: true,
-        configurable: true
-    });
     BackgroundGeolocation.ready = function (config, success, failure) {
         var bgGeo = plugin();
         return bgGeo.ready.apply(bgGeo, arguments);
@@ -397,6 +387,16 @@ var BackgroundGeolocation = /** @class */ (function () {
         var bgGeo = plugin();
         return bgGeo.requestPermission.apply(bgGeo, arguments);
     };
+    Object.defineProperty(BackgroundGeolocation, "logger", {
+        get: function () { return plugin().logger; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(BackgroundGeolocation, "deviceSettings", {
+        get: function () { return plugin().deviceSettings; },
+        enumerable: true,
+        configurable: true
+    });
     return BackgroundGeolocation;
 }());
 export default BackgroundGeolocation;
