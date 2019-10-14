@@ -86,14 +86,6 @@
         </config-file>
       <!-- /background-geolocation -->
       
-      <!-- google gms version -->
-
-      <config-file parent="/manifest/application" target="app/src/main/AndroidManifest.xml">
-        <meta-data android:name="com.google.android.gms.version" android:value="4030500" />
-      </config-file>
-
-      <!-- /google gms version -->
-      
      </platform>
 
      <!-- Browser (mock) -->
