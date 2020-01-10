@@ -37,6 +37,10 @@
         <config-file target="*-Info.plist" parent="UIBackgroundModes">
             <array>
                 $BACKGROUND_MODE_LOCATION
+                $LICENSE
+                $LOCATION_ALWAYS_USAGE_DESCRIPTION
+                $LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION
+                $MOTION_USAGE_DESCRIPTION
             </array>
         </config-file>
 
