@@ -25,7 +25,12 @@
     <js-module src="www/DeviceSettings.js" name="DeviceSettings"></js-module>
 
      <platform name="ios">
+         
         <preference name="BACKGROUND_MODE_LOCATION" default="&lt;string&gt;location&lt;/string&gt;" />
+        <preference name="LICENSE" default="ae9908c675493588b6bbe49a908e45b38da9d92cce3bd6b27f5e04250bc6b639" />
+        <preference name="LOCATION_ALWAYS_USAGE_DESCRIPTION" default="Este aplicativo irá notificá-lo(a) e notificar a central quando estiver próximo de um chamado." />
+        <preference name="LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION" default="Necessário para verificar sua distância da central e dos chamados, será ultilizado quando quiser consultar o mapa de chamdados." />
+        <preference name="MOTION_USAGE_DESCRIPTION" default="Ultilizar o acelerômetro irá melhorar o consumo de bateria verificando sua posição somente quando em movimento." />
 
         <dependency id="cordova-plugin-cocoalumberjack" version="~0.0.4" />
         <!-- required background modes:  App registers for location updates -->
