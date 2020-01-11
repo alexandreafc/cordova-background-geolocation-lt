@@ -37,10 +37,22 @@
         <config-file target="*-Info.plist" parent="UIBackgroundModes">
             <array>
                 $BACKGROUND_MODE_LOCATION
-                $LICENSE
-                $LOCATION_ALWAYS_USAGE_DESCRIPTION
-                $LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION
-                $MOTION_USAGE_DESCRIPTION
+                <dict>
+                    <key>LICENSE</key>
+                    <string>ae9908c675493588b6bbe49a908e45b38da9d92cce3bd6b27f5e04250bc6b639</string>
+                </dict>
+                <dict>
+                    <key>LOCATION_ALWAYS_USAGE_DESCRIPTION</key>
+                    <string>Este aplicativo irá notificá-lo(a) e notificar a central quando estiver próximo de um chamado.</string>
+                </dict>
+                  <dict>
+                    <key>LOCATION_WHEN_IN_USE_USAGE_DESCRIPTION</key>
+                    <string>Necessário para verificar sua distância da central e dos chamados, será ultilizado quando quiser consultar o mapa de chamdados.</string>
+                </dict>
+                <dict>
+                    <key>MOTION_USAGE_DESCRIPTION</key>
+                    <string>Ultilizar o acelerômetro irá melhorar o consumo de bateria verificando sua posição somente quando em movimento.</string>
+                </dict>
             </array>
         </config-file>
 
